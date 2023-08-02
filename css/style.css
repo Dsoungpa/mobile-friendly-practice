@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Website-Title{
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    color: white;
+    font-size:50px;
+}
+
+/* Update styles for the rows to center their content and add space between them */
+.row1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add space between rows */
+    width: 80%;
+}
+
+/* Update styles for the rows to align content to the right and add space between them */
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align content to the right */
+    margin-bottom: 20px; /* Add space between rows */
+    width: 80%;
+}
+
+.row1, .row2{
+    margin-left: 10%;
+}
+
+/* Additional styles for the titles and paragraphs */
+.row1 h1,
+.row2 h1 {
+    font-size: 24px; /* Adjust the title font size as needed */
+    text-align: center; /* Center the titles horizontally */
+    color: #ff6708;
+}
+
+.row2 p{
+    display: flex;
+    text-align: right;
+}
+
+.row1 p,
+.row2 p {
+    font-size: 16px; /* Adjust the paragraph font size as needed */
+}
