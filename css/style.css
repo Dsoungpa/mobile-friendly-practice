@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+svg{
+    margin-top: -100px;
+}
+
 .Website-Title{
     position: absolute;
     left: 45%;
@@ -11,12 +15,15 @@ body{
     font-size:50px;
 }
 
+.container{
+    margin-top: -150px;
+}
+
 /* Update styles for the rows to center their content and add space between them */
 .row1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Center the content horizontally */
-    margin-bottom: 20px; /* Add space between rows */
     width: 80%;
 }
 
@@ -25,7 +32,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Align content to the right */
-    margin-bottom: 20px; /* Add space between rows */
     width: 80%;
 }
 
@@ -36,17 +42,31 @@ body{
 /* Additional styles for the titles and paragraphs */
 .row1 h1,
 .row2 h1 {
-    font-size: 24px; /* Adjust the title font size as needed */
     text-align: center; /* Center the titles horizontally */
     color: #ff6708;
+    letter-spacing: 5px;
 }
 
 .row2 p{
     display: flex;
     text-align: right;
+    margin-bottom: 100px;
 }
 
 .row1 p,
 .row2 p {
     font-size: 16px; /* Adjust the paragraph font size as needed */
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #ff6708;
+}
+
+footer p {
+    position: fixed;
+    left:50%;
+    top: 92%;
+    color:#fff;
 }
