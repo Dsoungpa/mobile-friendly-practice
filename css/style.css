@@ -1,52 +1,115 @@
+h1{
+    color: white;
+}
+
 body{
     margin: 0;
     padding: 0;
 }
 
-.Website-Title{
-    position: absolute;
-    left: 45%;
-    top: 20px;
-    color: white;
-    font-size:50px;
+/* Media query for 480px breakpoint */
+@media (min-width: 480px) {
+    h1 {
+        color: rgb(226, 148, 148);
+        background-color: #611919; /* Change color to red for 480px breakpoint */
+    }
+
+    .desc:before {
+        content: "This browser window is smaller than 480px wide.";
+      }
+}
+  
+/* Media query for 768px breakpoint */
+@media (min-width: 768px) {
+    h1 {
+        color: rgb(82, 185, 34);
+        background-color: #0a360a; /* Change color to green for 768px breakpoint */
+    }
+
+    .desc:before {
+        content: "This browser window is at least 748px wide!";
+    }
 }
 
-/* Update styles for the rows to center their content and add space between them */
-.row1 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Center the content horizontally */
-    margin-bottom: 20px; /* Add space between rows */
-    width: 80%;
+/* Media query for 1024px breakpoint */
+@media (min-width: 1024px) {
+    h1 {
+        color: rgb(169, 174, 243);
+        background-color: #1010a4; /* Change color to blue for 1024px breakpoint */
+    }
+
+    .desc:before {
+        content: "This browser window is at least 1024px wide!";
+    }
 }
 
-/* Update styles for the rows to align content to the right and add space between them */
-.row2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align content to the right */
-    margin-bottom: 20px; /* Add space between rows */
-    width: 80%;
+@media (orientation: portrait) {
+    .orientation:after {
+      content: " Portrait.";
+    }
+  }
+  
+@media (orientation: landscape) {
+.orientation:after {
+    content: " Landscape.";
+}
 }
 
-.row1, .row2{
-    margin-left: 10%;
-}
+/*This is the Glitch.com Example CSS 
 
-/* Additional styles for the titles and paragraphs */
-.row1 h1,
-.row2 h1 {
-    font-size: 24px; /* Adjust the title font size as needed */
-    text-align: center; /* Center the titles horizontally */
-    color: #ff6708;
-}
-
-.row2 p{
-    display: flex;
-    text-align: right;
-}
-
-.row1 p,
-.row2 p {
-    font-size: 16px; /* Adjust the paragraph font size as needed */
-}
+  
+  CSS files add styling rules to your content
+  
+  body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  .desc {
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  @media (max-width: 640px) {
+    h1 {
+      color: red;
+    }
+  
+    .desc:before {
+      content: "This browser window is smaller than 640px wide.";
+    }
+  }
+  
+  @media (min-width: 640px) {
+    h1 {
+      color: blue;
+    }
+  
+    .desc:before {
+      content: "This browser window is at least 640px wide!";
+    }
+  }
+  
+  @media (min-width: 500px) and (max-width: 600px) {
+    h1 {
+      color: fuchsia;
+    }
+  
+    .desc:after {
+      content: " In fact, it's between 500px and 600px wide.";
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .orientation:after {
+      content: " Portrait.";
+    }
+  }
+  
+  @media (orientation: landscape) {
+    .orientation:after {
+      content: " Landscape.";
+    }
+  }  */
